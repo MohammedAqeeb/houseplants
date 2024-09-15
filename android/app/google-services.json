@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1086584245731",
+    "project_id": "developer-way-10308",
+    "storage_bucket": "developer-way-10308.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086584245731:android:e2fb21faa7cb91af2924d6",
+        "android_client_info": {
+          "package_name": "com.example.cart_bazar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6kTNtp8HyW3evqPgPR0VNKYQkXJvt0TA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086584245731:android:747d8629d81c4b862924d6",
+        "android_client_info": {
+          "package_name": "com.example.houseplants"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6kTNtp8HyW3evqPgPR0VNKYQkXJvt0TA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
