@@ -2,8 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:houseplants/features/deep_link/logic/handle_deeplink.dart';
 import 'package:houseplants/features/plants/presentation/bloc/get_all_plants_bloc.dart';
 import 'package:houseplants/features/plants/presentation/widgets/shimmer_loader.dart';
+import 'package:houseplants/init_dependency.dart';
 
 import 'plants_preview.dart';
 import '../widgets/header_text.dart';
@@ -16,14 +18,12 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  // late HandleDeepLinkUsecase handleDeepLinkUsecase;
   @override
   void initState() {
-    // WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
-    // handleDeepLinkUsecase = serviceLocator<HandleDeepLinkUsecase>();
-    // handleDeepLinkUsecase.call(context);
-
-    // });
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
+      HandleDeeplink(getAllPlantsDataSource: serviceLocator())
+          .initDeepLinks(context);
+    });
     super.initState();
   }
 

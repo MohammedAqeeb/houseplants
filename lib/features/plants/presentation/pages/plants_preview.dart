@@ -52,7 +52,7 @@ class _PlantsPreviewState extends State<PlantsPreview> {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(
-        children: ConstantCategory.categories
+        children: Constants.categories
             .map(
               (e) => Padding(
                 padding: const EdgeInsets.only(top: 10, right: 8),

@@ -10,6 +10,8 @@ class PlantRepoImpl implements PlantRepo {
 
   PlantRepoImpl({required this.getAllPlantsDataSource});
 
+  /// function call interface of datasource to the response of api
+  /// 
   @override
   Future<Either<Failure, List<Plants>>> getAllPlants() async {
     try {

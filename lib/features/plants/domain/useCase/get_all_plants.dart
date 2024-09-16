@@ -9,6 +9,8 @@ class GetAllPlantsUseCase implements GetPlantsUseCase<List<Plants>, NoParams> {
 
   GetAllPlantsUseCase({required this.plantRepo});
 
+  /// Function call interface of domain layer that has implemented the plantRepo
+  ///
   @override
   Future<Either<Failure, List<Plants>>> call(NoParams noparams) async {
     return await plantRepo.getAllPlants();

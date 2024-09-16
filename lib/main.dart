@@ -8,7 +8,6 @@ import 'package:houseplants/features/plants/presentation/bloc/get_all_plants_blo
 import 'package:houseplants/firebase_options.dart';
 import 'package:houseplants/init_dependency.dart';
 
-import 'core/cubit/fetched_plant_cubit.dart';
 import 'features/plants/presentation/pages/home_screen.dart';
 
 Future<void> main() async {
@@ -23,7 +22,6 @@ Future<void> main() async {
           create: (_) =>
               serviceLocator<GetAllPlantsBloc>()..add(FetchPlantsEvent()),
         ),
-        BlocProvider(create: (_) => serviceLocator<FetchedPlantsCubit>()),
       ],
       child: const MyApp(),
     ),
